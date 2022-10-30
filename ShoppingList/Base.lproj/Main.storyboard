@@ -97,32 +97,32 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3UP-LP-8Fe">
                                 <rect key="frame" x="16" y="298" width="182" height="34"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VBZ-Gd-46g">
                                 <rect key="frame" x="16" y="368" width="182" height="34"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FIR-4O-FuT">
                                 <rect key="frame" x="16" y="438" width="182" height="34"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J9f-CN-waI">
                                 <rect key="frame" x="16" y="510" width="182" height="34"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o4c-r5-PXO">
                                 <rect key="frame" x="16" y="583" width="182" height="34"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GXX-tu-mYa">
                                 <rect key="frame" x="16" y="652" width="182" height="34"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0J-ig-S0G">
                                 <rect key="frame" x="87" y="740" width="84" height="36"/>
@@ -135,6 +135,9 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="SaveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vy4-gT-2AP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vp1-uS-LTm">
                                 <rect key="frame" x="224" y="740" width="84" height="36"/>
@@ -323,6 +326,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Item1" destination="3UP-LP-8Fe" id="tg1-9j-erm"/>
+                        <outlet property="Item2" destination="VBZ-Gd-46g" id="Giw-TN-2lq"/>
+                        <outlet property="Item3" destination="FIR-4O-FuT" id="Rzc-5E-1sE"/>
+                        <outlet property="Item4" destination="J9f-CN-waI" id="W1C-2f-BOI"/>
+                        <outlet property="Item5" destination="o4c-r5-PXO" id="t9f-wn-HdA"/>
+                        <outlet property="Item6" destination="GXX-tu-mYa" id="mrI-OY-S0Y"/>
+                        <outlet property="OwnListName" destination="Zfa-xd-W0E" id="OlW-9n-VY5"/>
                         <outlet property="Value1" destination="1Xe-eX-dCt" id="nRi-GP-rni"/>
                         <outlet property="Value2" destination="uYz-AN-KvY" id="YC5-6R-vaU"/>
                         <outlet property="Value3" destination="mfQ-mO-81v" id="btF-uA-tpB"/>
