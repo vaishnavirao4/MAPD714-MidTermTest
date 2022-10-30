@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Item6: UITextField!
     
-    
+    //After clicking on save or cancel button, the resulting values will be displayed using the mentioned variables
     var cancel: Int?
     var saveClicked = ""
     
@@ -56,6 +56,7 @@ class ViewController: UIViewController {
             super.didReceiveMemoryWarning()
             
         }
+    
     //Steppers for each item
     //It will give us a count of number of items that we need
     @IBAction func Stepper1(_ sender: UIStepper) {
@@ -130,6 +131,7 @@ class ViewController: UIViewController {
         print("Item6: ", saveClicked)
         saveClicked = self.Value6.text! //Stepper6 value
         print("Qunatity6: ",saveClicked)
+        print("")
     }
     
 }
