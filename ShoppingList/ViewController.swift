@@ -1,12 +1,14 @@
-//
-//  ViewController.swift
-//  Name of App: ShoppingList
-//
-//  Student Name: Vaishnavi Rao
-//  Student ID: 301307031
-//  Created On: 2022-10-26.
-//
+/***
+  ViewController.swift
+  Name of App: ShoppingList
 
+  Student Name: Vaishnavi Rao
+  Student ID: 301307031
+  Created On: 2022-10-26.
+  Description: This is a Shopping List app which can be used to write the name of items needed and the quantity of the item required
+  The save button will print the items and their quantities at the terminal
+  The cancel button will reset everything to it's original state
+*/
 import UIKit
 
 class ViewController: UIViewController {
@@ -44,6 +46,7 @@ class ViewController: UIViewController {
     
     
     var cancel: Int?
+    var saveClicked = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,10 +100,37 @@ class ViewController: UIViewController {
         
     }
     
-    //When we click on save button, the list of items and their quantities must be displayed
+    //When we click on save button, the list of items and their quantities must be displayed at terminal
     @IBAction func SaveButtonPressed(_ sender: Any) {
+        
+        saveClicked = self.OwnListName.text!
+        print(saveClicked)
+        print("-------------")
+        saveClicked = self.Item1.text! //textfield1 value
+        print("Item1: ", saveClicked)
+        saveClicked = self.Value1.text! //Stepper1 value
+        print("Qunatity1: ",saveClicked)
+        saveClicked = self.Item2.text! //textfield2 value
+        print("Item2: ", saveClicked)
+        saveClicked = self.Value2.text! //Stepper2 value
+        print("Qunatity2: ",saveClicked)
+        saveClicked = self.Item3.text! //textfield3 value
+        print("Item3: ", saveClicked)
+        saveClicked = self.Value3.text! //Stepper3 value
+        print("Qunatity3: ",saveClicked)
+        saveClicked = self.Item4.text! //textfield4 value
+        print("Item4: ", saveClicked)
+        saveClicked = self.Value4.text! //Stepper4 value
+        print("Qunatity4: ",saveClicked)
+        saveClicked = self.Item5.text! //textfield5 value
+        print("Item5: ", saveClicked)
+        saveClicked = self.Value5.text! //Stepper5 value
+        print("Qunatity5: ",saveClicked)
+        saveClicked = self.Item6.text! //textfield6 value
+        print("Item6: ", saveClicked)
+        saveClicked = self.Value6.text! //Stepper6 value
+        print("Qunatity6: ",saveClicked)
     }
-    
     
 }
 
