@@ -85,7 +85,7 @@ class ViewController: UIViewController {
     
     //When we press the cancel button, all the values must be reset
     @IBAction func CancelButtonPressed(_ sender: Any) {
-        cancel = 0
+        cancel = 1
         Value1.text=String(cancel!)
         Value2.text=String(cancel!)
         Value3.text=String(cancel!)
@@ -110,27 +110,27 @@ class ViewController: UIViewController {
         saveClicked = self.Item1.text! //textfield1 value
         print("Item1: ", saveClicked)
         saveClicked = self.Value1.text! //Stepper1 value
-        print("Qunatity1: ",saveClicked)
+        print("Quantity1: ",saveClicked)
         saveClicked = self.Item2.text! //textfield2 value
         print("Item2: ", saveClicked)
         saveClicked = self.Value2.text! //Stepper2 value
-        print("Qunatity2: ",saveClicked)
+        print("Quantity2: ",saveClicked)
         saveClicked = self.Item3.text! //textfield3 value
         print("Item3: ", saveClicked)
         saveClicked = self.Value3.text! //Stepper3 value
-        print("Qunatity3: ",saveClicked)
+        print("Quantity3: ",saveClicked)
         saveClicked = self.Item4.text! //textfield4 value
         print("Item4: ", saveClicked)
         saveClicked = self.Value4.text! //Stepper4 value
-        print("Qunatity4: ",saveClicked)
+        print("Quantity4: ",saveClicked)
         saveClicked = self.Item5.text! //textfield5 value
         print("Item5: ", saveClicked)
         saveClicked = self.Value5.text! //Stepper5 value
-        print("Qunatity5: ",saveClicked)
+        print("Quantity5: ",saveClicked)
         saveClicked = self.Item6.text! //textfield6 value
         print("Item6: ", saveClicked)
         saveClicked = self.Value6.text! //Stepper6 value
-        print("Qunatity6: ",saveClicked)
+        print("Quantity6: ",saveClicked)
         print("")
     }
     
